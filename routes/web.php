@@ -19,7 +19,10 @@ use App\Http\Controllers\PhoneController;
 //or Route::get,post,put (url) 
 //Route::post('ruta/', [PhoneController::class, 'method']);
 
-Route::resource('', 'PhoneController');
-Route::resource('phone', 'PhoneController');
+//Route::resource('', 'PhoneController');
+//Route::resource('phone', 'PhoneController');
+
+Route::view('/', 'login');
+Route::view('/pruebaderuta', 'admin');
 
 
