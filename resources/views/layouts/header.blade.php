@@ -13,7 +13,8 @@
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <!-- CSS and Others -->
         <link rel = "stylesheet" type = "text/css" href = "global.css">
-       
+        <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}">
+        <script src = "{{ asset(mix('js/app.js')) }}"></script>
         <!-- Lottie -->
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>

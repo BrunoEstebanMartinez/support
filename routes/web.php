@@ -22,7 +22,7 @@ use App\Http\Controllers\PhoneController;
 //Route::resource('', 'PhoneController');
 //Route::resource('phone', 'PhoneController');
 
-Route::view('/', 'login');
-Route::view('/pruebaderuta', 'admin');
+Route::view('', 'login');
+Route::view('role', 'role');
 
 

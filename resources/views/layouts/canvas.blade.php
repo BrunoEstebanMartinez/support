@@ -6,7 +6,9 @@
 <body>
 
     <!-- Todo -->
+    @yield('canvas-register')
     @yield('canvas-login')
+    @yield('role-register')
     @yield('canvas-admin')
     @yield('canvas-student')
     @yield('canvas-teacher')
