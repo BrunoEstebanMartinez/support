@@ -1,16 +1,11 @@
 @extends('layouts.canvas')
     @section('canvas-login')
 
-<style type = "text/css">
-  
-
-    </style>
-  
-    <!-- Not touch first div-->
+      <!-- Not touch first div-->
     <div class = "container-canvas">
 
 
-          <div class="imagelogo">
+          <div class="imagelogo inrole">
             <img src="{{ asset('late.png') }}" alt="" class = "rounded-circle support">
           </div>
 
@@ -30,4 +25,5 @@
       
     </div>
     @endsection
+
     

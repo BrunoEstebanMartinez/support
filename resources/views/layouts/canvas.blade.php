@@ -5,6 +5,11 @@
 </head>
 <body>
 
+    <!-- SlideBars -->
+    @yield('forAdmins')
+    @yield('forStudents')
+    @yield('forTeachers')
+    
     <!-- Todo -->
     @yield('canvas-register')
     @yield('canvas-login')
@@ -12,10 +17,7 @@
     @yield('canvas-admin')
     @yield('canvas-student')
     @yield('canvas-teacher')
-    <!-- SlideBars -->
-    @yield('forAdmins')
-    @yield('forStudents')
-    @yield('forTeachers')
+   
     <!-- Forms -->
     @yield('Login')
     @yield('FormRegisterStudent')

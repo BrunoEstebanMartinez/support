@@ -9,7 +9,6 @@
 
 .boot-form-container{
   position: absolute;
-  background-color: var(--secondary);
   width: 25%;
   height: 60%;
   right: 39%;
@@ -25,13 +24,11 @@
  justify-content: center;
 }
 
-.imagelogo{
-  position: relative;
-  left: 42.5%;
-}
 .support{
   width:155px;
   height:155px;
+  position: relative;
+  left: 42.5%;
 }
 .center-title{
    position: relative;
@@ -47,6 +44,32 @@
   position:relative;
   left:5%;
 }
+
+.selectyourrole{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left:23.5%;  
+  background-color: #F0F0F0;
+  display: inline-flex;
+}
+.teacher{
+    position: relative;
+    width:50%;
+    height:70%;
+    top:14%;
+    background-color: var(--moradillo);
+    padding: 4%;
+}
+.student{
+    position: relative;
+    width:50%;
+    height:70%;
+    top:14%;
+    background-color: var(--moradillo);
+    padding: 4%;
+  }
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -76,6 +99,8 @@
   --danger: #e3342f;
   --light: #f8f9fa;
   --dark: #343a40;
+  --cafesito: #E2A442;
+  --moradillo: #8C8CC4;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
