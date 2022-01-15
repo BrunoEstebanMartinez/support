@@ -1,5 +1,5 @@
 @extends('layouts.canvas')
-@section('FormRegisterTeacher')
+@section('canvas')
 
 <!-- Not Touch Div -->
 
@@ -107,29 +107,30 @@
                            <h4>¿En que te especializas?</h4>
 
                                 <form action="" class = "needs-validation" novalidate>
-                                    <div class="col auto form-check mb-3">
-                                       <input type = "radio" class="form-check-input" id = "OneClass" value = "Option1">
-                                       <label for="OneClass" class="form-check-label">Mantenimiento a equipo de computo</label>
+                                    <div class="col-auto form-check mb-3">
+                                       <input type = "radio" class="form-check-input" name="exampleRadios">
+                                       <label class="form-check-label">Mantenimiento a equipos de cómputo</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="radio" class="form-check-input" id = "TwoClass" value = "Option2">
-                                        <label for="TwoClass" class="form-check-label">Reparación de SmartPhones, Tabletas...</label>
+                                        <input type="radio" class="form-check-input" name="exampleRadios">
+                                        <label class="form-check-label">Reparación de SmartPhones, Tabletas...</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="radio" class="form-check-input" id = "ThreeClass" value = "Option2">
-                                        <label for="ThreeClass" class="form-check-label">Reparación de componentes eléctronicos, microcomponentes...</label>
+                                        <input type="radio" class="form-check-input" name="exampleRadios">
+                                        <label class="form-check-label">Reparación de componentes eléctronicos, microcomponentes...</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="radio" class="form-check-input" id = "FourClass"value = "Option2">
-                                        <label for="FourClass" class="form-check-label">Reperación de electrodomésticos</label>
+                                        <input type="radio" class="form-check-input" name="exampleRadios">
+                                        <label class="form-check-label">Reperación de electrodomésticos</label>
                                     </div>
 
                                     <div class="col-auto input-group mb-3">
                                         <div class="input-group-append">
                                             <span class="input-group-text">Experiencia</span>
                                         </div>
-                                        <input type="text" id = "thisinputempresa" class = "form-control" placeholder = "Empresa">
-                                     <div class="input-group-append">
+                                        <input type="text" id = "thisinputempresa" class = "form-control" placeholder = "Empresa, Freelance...">
+                                     
+                                    <div class="input-group-append">
                                          
                                             <select name="" id="" class="form-control">
                                                 <option>Años</option>

@@ -1,5 +1,5 @@
 @extends('layouts.canvas')
-@section('role-register')
+@section('canvas')
 
 <!-- Not touch first div-->
 

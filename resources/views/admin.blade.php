@@ -1,5 +1,5 @@
 @extends('layouts.canvas')
-@section('canvas-admin')
+@section('canvas')
 <div>
     
     <p>hola, esta es una prueba de ruta</p>

@@ -1,5 +1,5 @@
 @extends('layouts.canvas')
-    @section('canvas-login')
+    @section('canvas')
 
       <!-- Not touch first div-->
     <div class = "container-canvas">
