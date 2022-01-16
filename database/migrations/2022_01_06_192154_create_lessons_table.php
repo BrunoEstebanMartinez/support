@@ -16,7 +16,7 @@ class CreateLessonsTable extends Migration
         Schema::create('lessons', function (Blueprint $table) {
             $table->increments('id_lesson');
             $table->text('lesson');
-            $table->timestamps();
+            
         });
     }
 

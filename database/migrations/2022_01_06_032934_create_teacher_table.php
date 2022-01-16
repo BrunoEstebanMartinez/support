@@ -15,21 +15,24 @@ class CreateTeacherTable extends Migration
     {
         Schema::create('teacher', function (Blueprint $table) {
             $table->bigincrements('id_teacher');
+            $table->text('E_Mail');
+            $table->text('Password');
+            $table->text('Confirmation');
             $table->text('Last_Name');
             $table->text('MLast_Name');
+            $table->text('Names');
             $table->integer('bday');
             $table->text('bmonth');
             $table->integer('byear');
             $table->text('Gender');
-            $table->text('E-Mail');
-            $table->text('Password');
-            $table->text('Confirmation');
+            $table->text('GenerPerson')->nullable();
             $table->text('Phone1');
-            $table->text('Phone2');
+            $table->text('Phone2')->nullable();
             $table->text('Country');
             $table->text('State');
             $table->integer('PostCode');
             $table->text('DirectionH');
+            $table->integer('namelesson')->nullable();
 
             $table->timestamps();
         });

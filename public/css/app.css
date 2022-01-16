@@ -321,6 +321,9 @@
     background-color:#857b26;
     overflow-y: scroll;
   }
+  .scroll-content-experience{
+    overflow-y: scroll;
+  }
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

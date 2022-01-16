@@ -15,7 +15,7 @@
          <h4 class = "center-title">Ingresa</h4><br>
          
          <form action="">
-        <input class="form-control form-control-lg" type="text" placeholder="Matricula"><br>
+        <input class="form-control form-control-lg" type="text" placeholder="E-Mail"><br>
         <input class="form-control form-control-lg" type="password" placeholder="Contraseña"><br>
         <button type="submit" class="btn btn-login btn-lg btn-block rounded-pill">Ingresa</button>
         </form><br>

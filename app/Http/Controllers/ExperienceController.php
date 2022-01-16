@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Experience;
 use Illuminate\Http\Request;
-
+use View;
 class ExperienceController extends Controller
 {
     /**
@@ -14,7 +14,8 @@ class ExperienceController extends Controller
      */
     public function index()
     {
-        //
+        $experience = Experience::All();
+        return view('formteacher#ReferencialInformationTeac', compact('experience'));
     }
 
     /**
@@ -24,7 +25,8 @@ class ExperienceController extends Controller
      */
     public function create()
     {
-        //
+      $experience = Experience::All();
+      return view('formteacher#ReferencialInformationTeacher');
     }
 
     /**
@@ -35,7 +37,12 @@ class ExperienceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $experience = new Experience();
+        $experience->Enterprise = $request->Enterprise;
+        $experience->Years = $request->Years;
+        $experience->save();
+        return redirect()->route('Formteacher.formteacher');
+        
     }
 
     /**

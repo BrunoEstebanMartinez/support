@@ -21,12 +21,21 @@ use App\Http\Controllers\PhoneController;
 
 //Route::resource('', 'PhoneController');
 //Route::resource('phone', 'PhoneController');
+//Route::group(['prefix' => 'canvas'], function(){});
+
 
 Route::view('', 'login');
 Route::view('login', 'login');
 Route::view('role', 'role');
-Route::view('Formteacher', 'formteacher');
-Route::view('Formstudent', 'formstudent');
+   
+    // Route::view('Formteacher', 'formteacher');
+    //Route::post('FormTeacher', 'TeacherController@ExperienceStore');
+    Route::resource('Formteacher', 'TeacherController');
+    Route::view('Formstudent', 'formstudent');
+
+
 Route::view('teacher', 'teacher');
-Route::view('student', 'student');
+    Route::view('student', 'student');
+
+
 
