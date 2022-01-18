@@ -324,6 +324,101 @@
   .scroll-content-experience{
     overflow-y: scroll;
   }
+  .scroll-post-canvas{
+    position:relative;
+    height: 100%;
+    width: 80%;
+    left: 10%;
+    overflow-y: scroll;
+    display: block;
+  }
+  .container-title-post{
+      position:relative;
+      background-color:#1d643b;
+      height: 25%;
+      width: 100%;
+  }
+  .title-post{
+
+  }
+  .container-subtitle-post{
+      position:relative;
+      background-color:#2176bd;
+      height: 15%;
+      width: 100%;
+  }
+  .subtitle-post{
+
+  }
+  .container-autor-post{
+      position: relative; 
+      background-color:#32240E;
+      height: 10%;
+      width: 100%;
+  }
+  .autor{
+
+  }
+  .body-description{
+      position: relative; 
+      background-color:#23272b;
+      height: 100%;
+      width: 100%;
+  }
+  .mybodypost{
+
+  }
+  .description-tags-instructions{
+    position:relative;
+    height: 20%;
+    width: 80%;
+    left: 10%;
+    background-color: #32240E;
+    display: block;
+  }
+  .leyendainstruction{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #3490dc;
+  }
+  .tags-user{
+    position:relative; 
+    height: 20%;
+    width: 80%;
+    left: 10%;
+    background-color: #4c110f;
+  }
+  .tags{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: inline;
+    background-color: #3f9ae5;
+  }
+  .user-content-tags{
+      position: relative; 
+      height: 100%;
+      width: 100%;
+      display: block; 
+      background-color:#FFFFFF;
+  }
+  .content-tags{
+    position: relative; 
+      height: 100%;
+      width: 50%;
+      display: inline; 
+      background-color:aqua;
+  }
+  .alldisusers{
+    position:relative;
+    height: 100%;
+    width: 50%;
+    display: inline;
+    background-color: blue;
+  }
+
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

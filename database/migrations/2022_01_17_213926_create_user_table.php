@@ -21,10 +21,10 @@ class CreateUserTable extends Migration
             $table->text('Last_Name');
             $table->text('MLast_Name');
             $table->text('Names');
-            $table->integer('bday');
-            $table->text('bmonth');
-            $table->integer('byear');
-            $table->text('Gender');
+            $table->integer('bday')->nullable();
+            $table->text('bmonth')->nullable();
+            $table->integer('byear')->nullable();
+            $table->text('Gender')->nullable();
             $table->text('GenerPerson')->nullable();
             $table->text('Phone1')->nullable();
             $table->text('Phone2')->nullable();

@@ -35,6 +35,7 @@ Route::resource('User', 'UserController');
 
 
 Route::view('Dash', 'dash');
+Route::resource('Post', 'PostController');
     Route::view('student', 'student');
 
 

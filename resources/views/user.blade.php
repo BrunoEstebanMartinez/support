@@ -207,6 +207,7 @@
         <div class="linesection"></div><br>
          
     <form action="{{ route('User.store') }}" method = "post"> 
+        {{ csrf_field() }}
     <div class="col-auto input-group mb-3">
 
         <input type="text" name = "Names" class = "form-control" placeholder = "Nombre(s)" required>
@@ -229,18 +230,20 @@
             <div class="input-group-append">
                 <span class = "input-group-text">¿Que te interesa?</span>
             </div>
-            <select class="form-control">
+            <select class="form-control" name = "namelesson" >
                 <option value=""></option>    
                 <option name = "namelesson" value="1">Mantenimiento a equipos de cómputo</option>
                 <option name = "namelesson" value="2">Reparación de smartphones, tabletas...</option>
-                <option name = "namelesson" value="2">Reparación componentes electrónicos, microcomponentes...</option>
-                <option name = "namelesson" value="3">Reparación de electrodomésticos</option>
-                <option name = "namelesson" value="4"></option>
+                <option name = "namelesson" value="3">Reparación componentes electrónicos, microcomponentes...</option>
+                <option name = "namelesson" value="4">Reparación de electrodomésticos</option>
             </select>
+    
+           
         </div>
             <input type="hidden" name = "roleuser" value = "2">
-            <button type="submit" class="btn btn-login btn-lg btn-block rounded-pill">Crear</button>
+            <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value = "Crear">
      </form><br>
+
         <div class="linesection"></div><br>
             <p class = "lead center-register">¿Ya tienes una cuenta? <a href="login" role = "button" class = "btn btn-link">Ingresa</a></p>
         </div>
