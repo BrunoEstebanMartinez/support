@@ -20,10 +20,10 @@
         <button type="submit" class="btn btn-login btn-lg btn-block rounded-pill">Ingresa</button>
         </form><br>
         <div class="linesection"></div><br>
-        <p class = "lead center-register">¿Aún no tienes cuenta? <a href="role" role = "button" class = "btn btn-link">Registrate</a></p>
+        <p class = "lead center-register">¿Aún no tienes cuenta? <a href="User" role = "button" class = "btn btn-link">Registrate</a></p>
       </div>
       
     </div>
     @endsection
-
+    
     

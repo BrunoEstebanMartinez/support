@@ -24,7 +24,8 @@ class CreateStudentTable extends Migration
             $table->text('SPassword');
             $table->text('SConfirmation');
             $table->text('Country');
-            $table->text('SLesson');
+            $table->integer('namelesson')->nullable();
+            $table->integer('roleuser');
             $table->timestamps();
         });
     }

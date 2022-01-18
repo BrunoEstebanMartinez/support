@@ -26,15 +26,15 @@ use App\Http\Controllers\PhoneController;
 
 Route::view('', 'login');
 Route::view('login', 'login');
-Route::view('role', 'role');
+Route::resource('User', 'UserController');
    
     // Route::view('Formteacher', 'formteacher');
     //Route::post('FormTeacher', 'TeacherController@ExperienceStore');
-    Route::resource('Formteacher', 'TeacherController');
-    Route::view('Formstudent', 'formstudent');
+    //Route::resource('Formteacher', 'TeacherController');
+    //Route::view('Formstudent', 'formstudent');
 
 
-Route::view('teacher', 'teacher');
+Route::view('Dash', 'dash');
     Route::view('student', 'student');
 
 

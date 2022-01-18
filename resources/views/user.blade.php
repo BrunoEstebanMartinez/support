@@ -1,6 +1,41 @@
 @extends('layouts.canvas')
 @section('canvas')
 
+<!-- Not touch first div-->
+
+<div class = "container-canvas">
+
+<div class="imagelogo inrole">
+            <img src="{{ asset('late.png') }}" alt="" class = "rounded-circle support">
+          </div>
+
+<div class = "selectyourrole shadow p-3 mb-5 rounded">
+
+        <div class="teacher rounded-left">
+            <p class="h4 text-center" >¿Quieres ayudar a resolver problemas de soporte técnico?</p><br>
+            <form method = "GET">
+                <input type = "submit" class="btn btn-login btn-lg btn-block rounded-pill" name = "1" value = "Empieza como docente"> 
+            </form>
+        </div>
+        <div class="student rounded-right" >
+             <p class="h4 text-center">¿Quieres consultar y aprender a la marcha de trabajar?</p><br>
+            <form method = "GET">
+                <input type = "submit" class="btn btn-login btn-lg btn-block rounded-pill" name = "2" value = "Empieza como alumno"> 
+                
+            </form>
+        </div>
+</div>
+
+
+</div>
+
+
+@if(isset($_GET['1']))
+
+
+@section('canvas')
+
+
 <!-- Not Touch Div -->
 <div class="container-canvas">
 
@@ -25,7 +60,7 @@
                         
                             <div class="directionform">
                             
-                                <form action="{{ route('Formteacher.store') }}" method = "POST">
+                                <form action="{{ route('User.store') }}" method = "POST">
                                 {{ csrf_field() }} 
                                     <div class="form-row align-items-center">
                                     
@@ -124,7 +159,7 @@
                                         <label class="form-check-label">Reperación de electrodomésticos</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="number" class="form-control"  value = "{{  }}" disabled>
+                                       <input type="hidden" name = "roleuser" value = "1">
                                     </div>
                             </div>
                                 
@@ -152,4 +187,70 @@
 
 </div>
 
+@elseif(isset($_GET['2'])) 
+
+
+
+@section('canvas')
+
+<!-- Not Touch Div -->
+
+<div class="container-canvas">
+
+   <div class="imagelogo inrole">
+            <img src="{{ asset('late.png') }}" alt="" class = "rounded-circle support">
+    </div>
+
+          <div class = "boot-form-container  shadow p-3 mb-5 rounded"> 
+            <br>
+        
+        <div class="linesection"></div><br>
+         
+    <form action="{{ route('User.store') }}" method = "post"> 
+    <div class="col-auto input-group mb-3">
+
+        <input type="text" name = "Names" class = "form-control" placeholder = "Nombre(s)" required>
+        <input type="text" name = "Last_Name" class = "form-control" placeholder = "Apellido Paterno" required>
+        <input type="text" name = "MLast_Name" class = "form-control" placeholder = "Apellido Materno" required>
+
+    </div>
+        <div class="col-auto input-group mb-3">
+            <input type="text" name = "E_Mail"class="form-control" placeholder = "E-Mail">
+            <input type="password" name = "Password" class="form-control" placeholder = "Password">
+            <input type="password" name = "Confirmation" class="form-control" placeholder = "Confirmation">
+        </div>
+        <div class="col-auto input-group mb-3">
+            <div class="input-group-append">
+                <span class="input-group-text">País</span>
+            </div>
+                <input type="text" name = "Country" class = "form-control">
+        </div>
+        <div class="col-auto input-group mb-3">
+            <div class="input-group-append">
+                <span class = "input-group-text">¿Que te interesa?</span>
+            </div>
+            <select class="form-control">
+                <option value=""></option>    
+                <option name = "namelesson" value="1">Mantenimiento a equipos de cómputo</option>
+                <option name = "namelesson" value="2">Reparación de smartphones, tabletas...</option>
+                <option name = "namelesson" value="2">Reparación componentes electrónicos, microcomponentes...</option>
+                <option name = "namelesson" value="3">Reparación de electrodomésticos</option>
+                <option name = "namelesson" value="4"></option>
+            </select>
+        </div>
+            <input type="hidden" name = "roleuser" value = "2">
+            <button type="submit" class="btn btn-login btn-lg btn-block rounded-pill">Crear</button>
+     </form><br>
+        <div class="linesection"></div><br>
+            <p class = "lead center-register">¿Ya tienes una cuenta? <a href="login" role = "button" class = "btn btn-link">Ingresa</a></p>
+        </div>
+
+    </div>
+
 @endsection
+
+@endif
+@endsection
+
+
+

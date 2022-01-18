@@ -26,4 +26,5 @@ class Teacher extends Model
     "DirectionH", 
     "namelesson"];
     protected $primaryKey = "id_teacher";
+    protected $rol = ["1"];
 }
