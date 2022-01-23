@@ -28,8 +28,10 @@ use App\Http\Controllers\PhoneController;
 // Welcome
 Route::view('', 'login');
 Route::get('login', 'LoginBaseController@InitialLate')->name('Login');
-Route::get('user', 'UserController@HelloUser')->name('HelloUser');
-Route::get('user', 'UserController@Bridge')->name('UserUp');
+Route::get('role', 'RoleController@Choose')->name('Choose');
+Route::resource('user', 'UserController');
+
+//Route::get('user', 'UserController@Bridge')->name('UserUp');
    
     // Route::view('Formteacher', 'formteacher');
     //Route::post('FormTeacher', 'TeacherController@ExperienceStore');
@@ -39,7 +41,7 @@ Route::get('user', 'UserController@Bridge')->name('UserUp');
 
 Route::view('Dash', 'dash');
 Route::resource('Post', 'PostController');
-    Route::view('student', 'student');
+Route::view('student', 'student');
 
 
 

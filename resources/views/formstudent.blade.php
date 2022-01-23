@@ -35,19 +35,7 @@
             </div>
                 <input type="text" class = "form-control">
         </div>
-        <div class="col-auto input-group mb-3">
-            <div class="input-group-append">
-                <span class = "input-group-text">¿Que te interesa?</span>
-            </div>
-            <select class="form-control">
-                <option value=""></option>    
-                <option value="">Mantenimiento a equipos de cómputo</option>
-                <option value="">Reparación de smartphones, tabletas...</option>
-                <option value="">Reparación componentes electrónicos, microcomponentes...</option>
-                <option value="">Reparación de electrodomésticos</option>
-                <option value=""></option>
-            </select>
-        </div>
+        <input type="hidden" name = "roleuser" value = "2">
             <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value  = "Continuar" >
      </form><br>
         <div class="linesection"></div><br>

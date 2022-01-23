@@ -15,22 +15,19 @@ class UserController extends Controller
      */
 
 
-    public function HelloUser(){
-        return view('user');
-    }
 
-    public function Bridge()
+    public function index()
     {
 
-        if(isset($_GET['Empieza como docente'])){
+        $user = User::All();
+        if(isset($_GET['docente'])){
             return view('formteacher', compact('user'));
-        }elseif(isset($_GET['Empieza como alumno'])){
+        }elseif(isset($_GET['alumno'])){
             return view('formstudent', compact('user'));
         }
-        $user = User::All();
+       
         
     }
-
     /**
      * Show the form for creating a new resource.
      *

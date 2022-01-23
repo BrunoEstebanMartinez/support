@@ -25,7 +25,7 @@
                         
                             <div class="directionform">
                             
-                                <form action="{{ route('Formteacher.store') }}" method = "POST">
+                                <form action="{{ route('user.store') }}" method = "POST">
                                 {{ csrf_field() }} 
                                     <div class="form-row align-items-center">
                                     
@@ -124,7 +124,7 @@
                                         <label class="form-check-label">Reperación de electrodomésticos</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="number" class="form-control"  value = "{{  }}" disabled>
+                                        <input type="hidden" class="form-control"  name = "roleuser" value = "1">
                                     </div>
                             </div>
                                 

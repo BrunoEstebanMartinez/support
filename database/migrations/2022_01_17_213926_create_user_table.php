@@ -32,7 +32,7 @@ class CreateUserTable extends Migration
             $table->text('State')->nullable();
             $table->integer('PostCode')->nullable();
             $table->text('DirectionH')->nullable();
-            $table->integer('namelesson');
+            $table->integer('namelesson')->nullable();
             $table->integer('roleuser');
 
             $table->timestamps();

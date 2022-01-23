@@ -12,8 +12,8 @@
             </a>
         <ul class="nav nav-pills justify-content-end">
              <li class="nav-item">
-                 <a href="" class= "nav-item btn btn-outline-dark" role = "button">Perfil</a>
-                 <a href="" class= "nav-item btn btn-outline-dark" role = "button">Cerrar sesión</a>
+                 <a href="" class= "nav-item btn btn-outline-dark" role = "button">{{ __('Perfil') }}</a>
+                 <a href="" class= "nav-item btn btn-outline-dark" role = "button">{{ __('Cerrar sesión') }}</a>
              </li>
         </ul>
     </nav>
