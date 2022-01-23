@@ -24,9 +24,12 @@ use App\Http\Controllers\PhoneController;
 //Route::group(['prefix' => 'canvas'], function(){});
 
 
+
+// Welcome
 Route::view('', 'login');
-Route::view('login', 'login');
-Route::resource('User', 'UserController');
+Route::get('login', 'LoginBaseController@InitialLate')->name('Login');
+Route::get('user', 'UserController@HelloUser')->name('HelloUser');
+Route::get('user', 'UserController@Bridge')->name('UserUp');
    
     // Route::view('Formteacher', 'formteacher');
     //Route::post('FormTeacher', 'TeacherController@ExperienceStore');

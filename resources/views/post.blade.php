@@ -5,57 +5,20 @@
 
 <div class="container-canvas">
 
-    <div class="description-tags-instructions">
-        <div class="leyendainstruction">
-            <h3>¡Aumenta tu red!</h3>
-            <p class = "text-justify">Un tag te ayudará a llegar a más personas.</p>
-            <p class="text-justify">Escribe un verbo y/o adjetivo que esté relacionado con tu publicación y... ¡Listo! Tu comunidad aprenderá de ti.</p>
-        </div>
-    </div>
-    <div class="tags-user">
-        <div class="tags">
-             <div class="input-group">
-                 <div class="input-group-prepend">
-                     <span class="input-group-text">Tags</span>
-                 </div>
-                 <form action="" method = "post">
-                 <input type="text" class = "form-control" placeholder = "Escribe un tag">
-                 <input type="submit" class = "btn btn-outline-success" value = "Agregar">
-                 </form>
-                 
-             </div>
-        </div>
-        <div class="user-content-tags">
-                <div class="content-tags">
+    <nav class = "navbar navbar-light bg-light shadow-sm p-3 mb-5 bg-white-rounded">
+            <a href="teacherup" class="navbar-brand">
+              <img src="{{ asset('latefon.png') }}" alt="" class="d-inline-block align-top" width = "30" height = "30">
+                S U P P O R T
+            </a>
+        <ul class="nav nav-pills justify-content-end">
+             <li class="nav-item">
+                 <a href="" class= "nav-item btn btn-outline-dark" role = "button">Perfil</a>
+                 <a href="" class= "nav-item btn btn-outline-dark" role = "button">Cerrar sesión</a>
+             </li>
+        </ul>
+    </nav>
 
-                </div>
-                <div class="alldisusers">
-                    
-                </div>
-        </div>
-    </div>
-    <div class="scroll-post-canvas shadow-lg p-3 mb-5 bg-white rounded">
-            <div class="container-title-post">
-                <div class = "title-post">
-
-                </div>
-            </div>
-            <div class="container-subtitle-post">
-                <div class = "subtitle-post"></div>
-            </div>
-            <div class="container-autor-post">
-                <div class = "autor"></div>
-            </div>
-            <div class="body-description">
-                <div class="mybodypost">
-
-                </div>
-            </div>
-            
-           
-            
-
-    </div>
+    
 
 
 </div>

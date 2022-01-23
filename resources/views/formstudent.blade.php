@@ -48,7 +48,7 @@
                 <option value=""></option>
             </select>
         </div>
-            <button type="submit" class="btn btn-login btn-lg btn-block rounded-pill">Crear</button>
+            <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value  = "Continuar" >
      </form><br>
         <div class="linesection"></div><br>
             <p class = "lead center-register">¿Ya tienes una cuenta? <a href="login" role = "button" class = "btn btn-link">Ingresa</a></p>

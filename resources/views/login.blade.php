@@ -2,8 +2,7 @@
     @section('canvas')
 
       <!-- Not touch first div-->
-    <div class = "container-canvas">
-
+ 
 
           <div class="imagelogo inrole">
             <img src="{{ asset('late.png') }}" alt="" class = "rounded-circle support">
@@ -20,10 +19,10 @@
         <button type="submit" class="btn btn-login btn-lg btn-block rounded-pill">Ingresa</button>
         </form><br>
         <div class="linesection"></div><br>
-        <p class = "lead center-register">¿Aún no tienes cuenta? <a href="User" role = "button" class = "btn btn-link">Registrate</a></p>
+        <p class = "lead center-register">¿Aún no tienes cuenta? <a href="{{ route ('HelloUser') }}" role = "button" class = "btn btn-link">Registrate</a></p>
       </div>
       
-    </div>
+   
     @endsection
     
     

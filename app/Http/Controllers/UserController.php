@@ -13,11 +13,22 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+
+    public function HelloUser(){
+        return view('user');
+    }
+
+    public function Bridge()
     {
+
+        if(isset($_GET['Empieza como docente'])){
+            return view('formteacher', compact('user'));
+        }elseif(isset($_GET['Empieza como alumno'])){
+            return view('formstudent', compact('user'));
+        }
         $user = User::All();
         
-        return view('user', compact('user'));
     }
 
     /**
