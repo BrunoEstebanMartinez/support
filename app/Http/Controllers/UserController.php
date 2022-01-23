@@ -67,7 +67,7 @@ class UserController extends Controller
         $user->namelesson = $request->namelesson;
         $user->roleuser = $request->roleuser;
         $user->save();
-        return view('dash');
+        return redirect()->route('feed.index');
     }
 
     /**

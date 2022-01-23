@@ -172,7 +172,7 @@
   .ranking-challenge-test{
     position: relative;
     background-color:#FFFFFF;
-    width: 20%;
+    width: 25%;
     height: 100%;
     display: inline;
   }
@@ -251,28 +251,32 @@
   }
   .todo-hilo-questions-offer{
     position: relative;
-    background-color: #FFFFFF;
-    width: 60%;
+    background-color: #F8FAFC;
+    width: 50%;
     height: 100%;
     display: inline;
+    padding-right: 5%;
+    padding-left: 5%;
+    overflow-y: scroll;
   }
   .container-create{
     position: relative; 
-   width: 100%;
-   height: 10%;
-   background-color: #1d68a7; 
+   width: 80%;
+   height: 15%;
+   background-color: #F0F0F0; 
   }
   .scroll-temas{
     position: relative;
     width: 100%;
-    height: 90%;
-    background-color: #212529;
-    overflow-y: scroll;
+    height: 50%;
+    background-color: #F0F0F0;
+    
   }
+ 
   .red-friends{
     position: relative;
     background-color:#FFFFFF;
-    width: 20%;
+    width: 25%;
     height: 100%;
     
   }

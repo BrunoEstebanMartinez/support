@@ -40,11 +40,11 @@
 
             </div>
             <div class="todo-hilo-questions-offer">
-                    <div class="container-create">
+                    <div class="container-create rounded">
 
                     </div>
-                    <div class="scroll-temas">
-
+                    <div class="scroll-temas shadow p-3 mb-5 bg-white rounded">
+                        
                     </div>
             </div>
             <div class="red-friends">

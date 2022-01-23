@@ -14,26 +14,25 @@
         
         <div class="linesection"></div><br>
          
-    <form action="">
+    <form action = "{{ route('user.store') }}" method = "POST">
+        @csrf
         <div class="col-auto input-group mb-3">
-            <input type="text" class = "form-control" placeholder = "Nombre">
-            <input type="text" class="form-control" placeholder = "Apellido paterno">
-            <input type="text" class="form-control" placeholder = "Apellido maternos">
-            <input type="text" class = "form-control" placeholder = "Edad">
+            <input type="text" class = "form-control" name = "Names" placeholder = "Nombre">
+            <input type="text" class="form-control" name = "Last_Name" placeholder = "Apellido paterno">
+            <input type="text" class="form-control" name = "MLast_Name" placeholder = "Apellido maternos">
         </div>    
         <div class="col-auto input-group mb-3">
-            <input type="text" class="form-control" placeholder = "Username">
-            <input type="text" class="form-control" placeholder = "E-Mail">
+            <input type="text" class="form-control" name = "E_Mail" placeholder = "E-Mail">
         </div>
         <div class="col-auto input-group mb-3">
-            <input type="password" class="form-control" placeholder = "Password">
-            <input type="password" class="form-control" placeholder = "Confirmation">
+            <input type="password" class="form-control" name = "Password" placeholder = "Password">
+            <input type="password" class="form-control" name = "Confirmation" placeholder = "Confirmation">
         </div>
         <div class="col-auto input-group mb-3">
             <div class="input-group-append">
                 <span class="input-group-text">País</span>
             </div>
-                <input type="text" class = "form-control">
+                <input type="text" name = "Country" class = "form-control">
         </div>
         <input type="hidden" name = "roleuser" value = "2">
             <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value  = "Continuar" >

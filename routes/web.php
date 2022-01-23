@@ -39,7 +39,7 @@ Route::resource('user', 'UserController');
     //Route::view('Formstudent', 'formstudent');
 
 
-Route::view('Dash', 'dash');
+Route::resource('feed', 'FeedController');
 Route::resource('Post', 'PostController');
 Route::view('student', 'student');
 
