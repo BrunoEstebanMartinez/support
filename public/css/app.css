@@ -165,13 +165,13 @@
   .containerteacher{
     position: relative;
     display: flex;
-    background-color: gray;
+    
     height:91.5%;
     width:100%;
   }
   .ranking-challenge-test{
     position: relative;
-    background-color:#FFFFFF;
+    background-color: #F8FAFC;
     width: 25%;
     height: 100%;
     display: inline;
@@ -181,34 +181,66 @@
     width: 100%;
     height: 20%;
     display: inline;
+    background-color: #F8FAFC;
 
   }
   .title-ranking{
     position: relative;
     height: 5%;
     width: 100%;
-    background-color:cadetblue;
+    padding-left: 5%;
+    padding-top: 1%;
   }
   .scroll-container-ranking{
        position: relative; 
        height: 15%;
        width: 100%; 
-       background-color: #FFFFFF;
-       display: inline;
-       overflow-y: scroll;
   }
    .title-materia{
       position: relative;
-      height: 5%;
+      height: 27%;
       width: 100%;
-      background-color: aqua;
+      padding-left: 10%;
   }
   .icons-ranking{
       position: relative;
-      height: 10%; 
+      height: 73%; 
       width: 100%;
-      background-color: blue;
-   }  
+      display: flex;
+      
+   }
+   .icon-arrow-up{
+     position: relative;
+     height: 100%; 
+     width: 30%; 
+   } 
+   .number-arrow-up{
+     position: relative; 
+     height: 50%;
+     width: 100%; 
+    padding-left: 20%;
+    }
+   .arrow-up{
+     position: relative; 
+     height: 50%; 
+     width: 100;
+     padding-left: 35%;
+   }
+   .number-ranking-title{
+    position: relative;
+    height: 100%; 
+    width: 40%; 
+    padding-left: 8%;
+    padding-top: 5%;
+     
+   } 
+   .icon-arrow-down{
+    position: relative;
+    height: 100%; 
+    width: 30%; 
+    
+
+     }
   .challenge{
     position: relative;
     background-color:aqua;
@@ -220,18 +252,97 @@
     position: relative;
     height: 10%;
     width: 100%;
-    background-color:cadetblue;
+    display: flex;
+    padding-left: 5%;
+    padding-top: 5.5%;
+  }
+  .direction-button-icon{
+    position: relative; 
+    left: 190px;
   }
   .scroll-container-challenge{
     position: relative; 
        height: 30%;
-       width: 100%; 
-       background-color: coral;
+       width: 100%;   
        overflow-y: scroll;
+  }
+ 
+  .content-challenges{
+    position:relative; 
+    height: 40%;
+    width: 100%;
+      }
+  .my-challenge-user-up{
+    position:relative; 
+    height: 40%;
+    width: 100%;
+    padding-left: 1%;
+    
+  }
+  .three-content-see{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display:flex;
+      }
+  .difficult-see-challenge{
+    position: relative; 
+    height: 100%;
+    width : 35%;
+
+  }
+  .number-diffucult{
+    position:relative; 
+    height: 50%;
+    width: 100%;
+    padding-left: 1%;
+  }
+  .icon-difficult{
+    position:relative; 
+    height: 50%;
+    width: 100%;
+    padding-left: 70%;
+    padding-top: 4%;
+  }
+  .number-accept{
+    position:relative; 
+    height: 50%;
+    width: 100%;
+    padding-left: 1%;
+  }
+  .icon-accepted{
+    position:relative; 
+    height: 50%;
+    width: 100%;
+    padding-left: 70%;
+    padding-top: 4%;
+  }
+  .number-deny{
+    position:relative; 
+    height: 50%;
+    width: 100%;
+    padding-left: 1%;
+  }
+  .icon-deny{
+    position:relative; 
+    height: 50%;
+    width: 100%;
+    padding-left: 70%;
+    padding-top: 4%;
+  }
+  .accept-challenge{
+    position: relative; 
+    height: 100%;
+    width : 35%;
+  }
+  .deny-challenge{
+    position: relative; 
+    height: 100%;
+    width : 35%;
+    
   }
   .test{
     position: relative;
-    background-color:brown;
     width: 100%;
     height: 40%;
     display: inline;
@@ -240,13 +351,19 @@
     position: relative;
     height: 10%;
     width: 100%;
-    background-color:cadetblue;
+    display: flex;
+    padding-left: 5%;
+    padding-top: 5.5%;
   }
+.direction-button-test{
+  position: relative; 
+  left: 225px;
+  
+}
   .scroll-container-test{
     position: relative; 
     width: 100%; 
     height: 30%;
-    background-color: coral;
     overflow-y: scroll;
   }
   .todo-hilo-questions-offer{
@@ -254,25 +371,93 @@
     background-color: #F8FAFC;
     width: 50%;
     height: 100%;
-    display: inline;
-    padding-right: 5%;
-    padding-left: 5%;
+    
     overflow-y: scroll;
   }
+  
   .container-create{
     position: relative; 
-   width: 80%;
-   height: 15%;
+   width: 57%;
+   height: 13%;
+   top: 5%;
+   left: 23%;
    background-color: #F0F0F0; 
   }
   .scroll-temas{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 50%;
+    top: 5%;
+    left: 12%; 
     background-color: #F0F0F0;
+  }
+  .hello-post{
+    position: relative;
+    height: 100%;
+    width: 100%;
     
   }
- 
+  .my-info-user{
+    position: relative; 
+    height: 20%; 
+    width: 100%; 
+    display: flex;  
+    
+  }
+  .image-user-info{
+    position:relative; 
+    height: 100%; 
+    width: 10%;
+    
+  }
+   .header-user-image{
+     position:relative;
+     height: 100%;
+     width: 90%;
+      
+   }
+
+   .name-user-info{
+      position:relative;
+      height: 25%;
+      width: 100%;  
+   }
+   .role-user-info{
+    position:relative;
+    height: 25%;
+    width: 100%;  
+   }
+   .int-user-info{
+    position:relative;
+    height: 25%;
+    width: 100%;  
+   }
+   .date-info-user{
+    position:relative;
+    height: 25%;
+    width: 100%;  
+   }
+   .posted-user{
+     position:relative;
+    height: 80%;
+    width: 100%;
+    
+   }
+   .title-posted{
+      position: relative; 
+      height: 20%;
+      width: 100%;  
+   }
+   .previo-posted{
+    position: relative; 
+    height: 30%;
+    width: 100%;
+   }
+   .image-option{
+    position: relative; 
+    height: 50%;
+    width: 100%;
+   }
   .red-friends{
     position: relative;
     background-color:#FFFFFF;
@@ -284,27 +469,93 @@
     position: relative;
     height: 50%;
     width: 100%;
-    background-color:#1d643b; 
     display: inline;
   }
   .title-red-friends{
     position: relative; 
     height: 5%;
     width: 100%;
-    background-color: #1d68a7;
+    padding-left: 5%;
+   
   }
   .searchred{
     position: relative; 
     height: 10%;
     width: 100%;
-    background-color:#32240E;
+    padding-top: 2.5%;
   }
+  .container-mypartner{
+    position: relative; 
+    height: 20%;
+    width: 100%;
+    display:flex;
+  }
+  .larger-butt{
+    position: relative;
+    height: 100%;
+    width: 85%;
+    
+    display: flex;
+  }
+  .content-contact-add{
+    position: relative; 
+    height: 100%;
+    width: 60%; 
+  }
+  .name-add-user{
+    position: relative; 
+    height: 35%;
+    width: 100%;
+  }
+  .inter-add-user{
+    position: relative; 
+    height: 35%;
+    width: 100%;
+  }
+  .experience-add-user{
+    position: relative; 
+    height: 30%;
+    width: 100%;
+  }
+  .reference-add-user{
+    position:relative;
+    width:40%;
+    height: 100%;
+  }
+  .container-one-add{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  .container-two-add{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  .ranking-add-user{
+      position: relative;
+      width: 35.5%;
+      height: 100%;
+  }
+  .exams-past-add{
+    position: relative;
+    width: 35.5%;
+    height: 100%;
+  }
+  .test-past-add{
+    position: relative;
+    width: 35.5%;
+    height: 100%;
+  }
+
   .scroll-redteacher{
     position: relative; 
     height: 35%;
     width: 100%;
-    background-color:#38c172;
-    overflow-y: scroll;
+    
+    
   }
   .groups-red{
     position: relative; 
