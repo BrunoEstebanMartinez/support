@@ -140,42 +140,63 @@
                                 <div class="input-group-prepend">
                                     <img src="{{ asset('book-reader.png') }}" alt="" class = "input-group-text">
                                 </div>
-                                <input type="text" class = "form-control" placeholder = "Busca a un compañero..." name = "searching">
+                                <input type="text" class = "form-control" placeholder = "Busca a un compañer@..." name = "searching">
                             </div>
                     </div>
                     <div class="scroll-redteacher">
                         <div class="container-mypartner">
                             
                                 <div class="larger-butt">
-                                     <div class="content-contact-add border border-dark">
-                                        <div class = "name-add-user border border-dark"></div>
-                                        <div class="inter-add-user border border-dark"></div>
-                                        <div class="experience-add-user border border-dark"></div>
+                                     <div class="content-contact-add ">
+                                        <div class = "name-add-user "><p><small><strong>{{  __('Name')  }}</strong></small></p></div>
+                                        <div class="inter-add-user "><p><small><strong>{{ __('Inter') }}</strong></small></p></div>
+                                        <div class="experience-add-user "><p><small><strong>{{ __('Experience') }}</strong></small></p></div>
                                     </div>
-                                    <div class="reference-add-user border border-dark">
+                                    <div class="reference-add-user ">
                                         <div class="container-one-add">
-                                            <div class="ranking-add-user border border-dark"></div>
-                                            <div class="exams-past-add border border-dark" ></div>
-                                            <div class="test-past-add border border-dark"></div>
+                                            <div class="ranking-add-user "><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                            <div class="exams-past-add " ><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                            <div class="test-past-add "><p><small><strong>{{  __('0')  }}</strong></small></p></div>
                                         </div>
                                         <div class="container-two-add">
-                                            <div class="ranking-add-user border border-dark"></div>
-                                            <div class="exams-past-add border border-dark" ></div>
-                                            <div class="test-past-add border border-dark"></div>
+                                            <div class="ranking-add-user "><img src="{{ asset('arrow-growth.png') }}" alt="" height = "15" width = "15"></div>
+                                            <div class="exams-past-add " ><img src="{{ asset('nerd.png') }}" alt="" height = "15" width = "15"></div>
+                                            <div class="test-past-add "><img src="{{ asset('check.png') }}" alt="" height = "15" width = "15"></div>
                                         </div>
                                     </div>   
                                 </div>
                                 
-                                    <a href="" role = "button" class = "btn btn-outline-light"><img src="{{ asset('user-plus.png') }}" alt=""></a>
+                                <a href="" class = "text-primary tit-add-ser"><p><small><strong>Add</strong></small></p></a>
                                                            
                         </div>
                     </div>
                 </div>
                 <div class="groups-red">
-                    <div class="title-gr"></div>
+                    <div class="title-gr border-top border-dark "><p><strong>{{ __('Grupos') }}</strong></p></div>
                     <div class="scroll-gr">
-
-                    </div>
+                              <div class="container-mypartner">
+                                    <div class="larger-butt">
+                                        <div class="content-contact-add">
+                                            <div class = "name-add-user "><p><small><strong>{{  __('Name-Group')  }}</strong></small></p></div>
+                                            <div class="inter-add-user "><p><small><strong>{{ __('Creator-group') }}</strong></small></p></div>
+                                            <div class="experience-add-user "><p><small><strong>{{ __('FinGroup') }}</strong></small></p></div>
+                                        </div>
+                                        <div class="reference-add-user">
+                                            <div class="container-one-add">
+                                                <div class="ranking-add-user "><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                                <div class="exams-past-add " ><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                                <div class="test-past-add "><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                            </div>
+                                            <div class="container-two-add">
+                                                <div class="ranking-add-user "><img src="{{ asset('arrow-growth.png') }}" alt="" height = "15" width = "15"></div>
+                                                <div class="exams-past-add " ><img src="{{ asset('nerd.png') }}" alt="" height = "15" width = "15"></div>
+                                                <div class="test-past-add "><img src="{{ asset('check.png') }}" alt="" height = "15" width = "15"></div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <a href="" class = "text-primary tit-add-ser"><p><small><strong>Join</strong></small></p></a>
+                              </div>
+                   </div>
                 </div>
             </div>
     </div>
