@@ -24,7 +24,7 @@
     
    
    
-    <main class="py-4">
+    <main class="container-canvas">
         @yield('canvas')
     </main>
    

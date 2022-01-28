@@ -4,7 +4,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #F8FAFC;
 }
 
 .boot-form-container{
@@ -583,7 +583,152 @@
     position:relative; 
     padding-top: 4%;
   }
-  
+.canverfeed{
+    position: relative; 
+    width: 100%;
+    height: 80%;
+    display:flex; 
+}
+  .container-posted{
+    position:relative; 
+    width: 70%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .up-button-posted{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    padding-left: 86.5%;
+    padding-top: 1%;
+  }
+  .vista-post-tools{
+    position: relative; 
+    height: 26%; 
+    width: 100%;
+  }
+  .my-title-up-post{
+    position: relative;
+    height: 75%;
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+  }
+  .menu-tools-post{
+   position: relative; 
+   height: 23%;
+   width: 100%;
+  }
+  .write-user-here{
+    position: relative; 
+    height: 53%;
+    width: 100%; 
+  }
+  .tg-information-check{
+    position: relative; 
+    width: 30%;
+    height: 100%;
+  }
+  .info-today-check{
+    position: relative; 
+    height: 35%;
+    width: 100%;
+  }
+  .tg-relation-p{
+    position: relative; 
+    height: 35%;
+    width: 100%;
+  }
+  .tg-other-relation-p{
+    position: relative; 
+    height: 30%;
+    width: 100%;
+  }
+  .reedme-tod-year{
+    position: relative;
+    height: 25%;
+    width: 100%;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
+  .reedme-inform-year{
+    position: relative; 
+    height: 75%;
+    width: 100%;
+  }
+  .subtit-inform-y1{
+    position: relative; 
+    height: 25%;
+    width: 100%;
+    padding-left: 6%;
+  }
+  .textt-large-inform-y2{
+    position: relative;
+    height: 75%;
+    width: 100%;
+    overflow-y:scroll;
+    padding-left: 3%;
+    
+  }
+  .tg-relation-p1{
+    position: relative; 
+    height: 25%;
+    width: 100%;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
+  .tg-relation-glob-p01{
+    position: relative; 
+    height: 75%;
+    width: 100%;
+  }
+  .tg-relation-p2{
+    position: relative; 
+    height: 25%;
+    width: 100%;
+    padding-left: 6%;
+  }
+  .tg-relation-p3{
+    position: relative;
+    height: 75%;
+    width: 100%;
+  }
+  .check-tag1{
+    position: relative; 
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+  .check-tag2{
+    position: relative; 
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+  .t1{
+    position: relative; 
+    height:100%;
+    width: 35%;
+    padding-top: 3%;
+    padding-left: 6%;
+  }
+  .t2{
+    position: relative; 
+    height:100%;
+    width: 35%;
+    padding-top: 3%;
+    padding-left: 6%;
+  }
+  .t3{
+    position: relative; 
+    height:100%;
+    width: 35%;
+    padding-top: 3%;
+    padding-left: 6%;
+  }
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
