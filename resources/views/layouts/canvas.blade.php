@@ -8,7 +8,7 @@
     <!-- Slides -->
     <!-- User is not authenticated -->
     @auth
-        <nav class = "navbar navbar-light bg-light shadow-sm p-3 mb-5 bg-white-rounded">
+    <nav class = "navbar navbar-light bg-light shadow-sm p-3 mb-5 bg-white-rounded">
                 <a href="teacherup" class="navbar-brand">
                     <img src="{{ asset('latefon.png') }}" alt="" class="d-inline-block align-top" width = "30" height = "30">
                     S U P P O R T
@@ -21,7 +21,7 @@
                 </ul>
         </nav>
     @endauth
-    
+
    
    
     <main class="container-canvas">

@@ -15,12 +15,12 @@ class CreateUserTable extends Migration
     {
         Schema::create('user', function (Blueprint $table) {
             $table->bigincrements('id_user');
-            $table->text('E_Mail');
-            $table->text('Password');
+            $table->string('email')->unique();
+            $table->string('password');
             $table->text('Confirmation');
-            $table->text('Last_Name');
-            $table->text('MLast_Name');
-            $table->text('Names');
+            $table->text('Last_Name')->nullable();
+            $table->text('MLast_Name')->nullable();
+            $table->text('Names')->nullable();
             $table->integer('bday')->nullable();
             $table->text('bmonth')->nullable();
             $table->integer('byear')->nullable();
@@ -28,10 +28,11 @@ class CreateUserTable extends Migration
             $table->text('GenerPerson')->nullable();
             $table->text('Phone1')->nullable();
             $table->text('Phone2')->nullable();
-            $table->text('Country');
+            $table->text('Country')->nullable();
             $table->text('State')->nullable();
             $table->integer('PostCode')->nullable();
             $table->text('DirectionH')->nullable();
+            
             $table->integer('namelesson')->nullable();
             $table->integer('roleuser');
 

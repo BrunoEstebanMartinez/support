@@ -27,7 +27,7 @@
             </div>
             <div class="vista-post-tools  shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="my-title-up-post ">
-                   <input type="text" class="form-control form-control-lg" placeholder = "Titulo...">                    
+                   <input type="text" name = "title" class="form-control form-control-lg" placeholder = "Titulo...">                    
                 </div>
                 <div class="menu-tools-post border-top border-dark">
 
@@ -35,9 +35,9 @@
             </div>
             
             <div class="write-user-here  shadow-lg p-3 mb-5 bg-white rounded">
-                    <textarea class = "form-control" name="" id="" rows="10" placeholder = "¿Que estas creando? ..."></textarea>
+                    <textarea class = "form-control" name = "description" id="" rows="10" placeholder = "¿Que estas creando? ..."></textarea>
             </div>
-            </form>
+           
         </div>
 
 
@@ -70,8 +70,8 @@
                                     <div class="check-tag1">
                                         <div class="t1 ">
                                             <div class="form-check">
-                                                <input type="checkbox" class="form-check-input">
-                                                <label for="" class="form-check-label">{{ __('Name') }}</label>
+                                                <input type="checkbox" name = "" class="form-check-input" id = "valorclavePost1">
+                                                <label for = "valorclavePost1" class="form-check-label">{{ __('Name') }}</label>
                                             </div>
                                         </div>
                                         <div class="t2 ">
@@ -162,8 +162,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    </div>
                                 </div>
+                                        </form>
+                            </div>
             </div>
         </div>
     

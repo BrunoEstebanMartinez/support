@@ -25,7 +25,7 @@
                         
                             <div class="directionform">
                             
-                                <form action="{{ route('user.store') }}" method = "POST">
+                                <form action="{{ route('register') }}" method = "POST">
                                 {{ csrf_field() }} 
                                     <div class="form-row align-items-center">
                                     
@@ -39,8 +39,8 @@
 
                                         <div class="col-auto input-group mb-3">
 
-                                            <input type="text" name = "E_Mail" class="form-control" placeholder = "E-mail" required>
-                                            <input type="text" name = "Password" class = "form-control" placeholder = "Password" required>
+                                            <input type="text" name = "email" class="form-control" placeholder = "E-mail" required>
+                                            <input type="text" name = "password" class = "form-control" placeholder = "Password" required>
                                             <input type="text" name = "Confirmation" class="form-control" placeholder = "Confirmation" required>
 
                                         </div>
@@ -147,7 +147,15 @@
                      
     </div>
 
-
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
 
 </div>

@@ -28,10 +28,13 @@ use App\Http\Controllers\PhoneController;
 // Welcome
 Route::view('', 'login');
 Route::get('login', 'LoginBaseController@InitialLate')->name('Login');
+Route::post('login', 'LoginBaseController@authusercredentials')->name('authusercredentials');
 Route::get('role', 'RoleController@Choose')->name('Choose');
-Route::resource('user', 'UserController');
+Route::get('user', 'UserController@index')->name('UpUser');
+Route::post('user', 'UserController@register')->name('register');
 
-//Route::get('user', 'UserController@Bridge')->name('UserUp');
+
+
    
     // Route::view('Formteacher', 'formteacher');
     //Route::post('FormTeacher', 'TeacherController@ExperienceStore');
@@ -39,7 +42,7 @@ Route::resource('user', 'UserController');
     //Route::view('Formstudent', 'formstudent');
 
 
-Route::resource('feed', 'FeedController');
+Route::get('/feed', 'FeedController@index')->name('feed');
 Route::resource('Post', 'PostController');
 Route::view('student', 'student');
 

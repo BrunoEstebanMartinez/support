@@ -3,15 +3,21 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-class User extends Model
+class User extends Authenticatable
 {
+
+    use Notifiable;
+
     protected $table = "user";
     protected $fillable = ["Last_Name", 
     "MLast_Name",
     "Names", 
-    "E_Mail", 
-    "Password", 
+    "email", 
+    "password", 
     "Confirmation", 
     "bday", 
     "bmonth", 

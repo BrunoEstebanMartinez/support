@@ -14,7 +14,7 @@
         
         <div class="linesection"></div><br>
          
-    <form action = "{{ route('user.store') }}" method = "POST">
+    <form action = "{{ route('register') }}" method = "POST">
         @csrf
         <div class="col-auto input-group mb-3">
             <input type="text" class = "form-control" name = "Names" placeholder = "Nombre">
@@ -22,10 +22,10 @@
             <input type="text" class="form-control" name = "MLast_Name" placeholder = "Apellido maternos">
         </div>    
         <div class="col-auto input-group mb-3">
-            <input type="text" class="form-control" name = "E_Mail" placeholder = "E-Mail">
+            <input type="email" class="form-control" name = "email" placeholder = "E-Mail">
         </div>
         <div class="col-auto input-group mb-3">
-            <input type="password" class="form-control" name = "Password" placeholder = "Password">
+            <input type="password" class="form-control" name = "password" placeholder = "Password">
             <input type="password" class="form-control" name = "Confirmation" placeholder = "Confirmation">
         </div>
         <div class="col-auto input-group mb-3">
@@ -35,12 +35,23 @@
                 <input type="text" name = "Country" class = "form-control">
         </div>
         <input type="hidden" name = "roleuser" value = "2">
-            <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value  = "Continuar" >
-     </form><br>
+            <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value  = "Continuar" > 
+    </form><br>
         <div class="linesection"></div><br>
             <p class = "lead center-register">¿Ya tienes una cuenta? <a href="login" role = "button" class = "btn btn-link">Ingresa</a></p>
         </div>
+        @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
     </div>
+
+    
 
 @endsection

@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Role;
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator; 
+use App\Providers\RouteServiceProvider;
+use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
@@ -14,7 +19,14 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+     use RegistersUsers;
 
+     protected $redirectTo = RouteServiceProvider::FEED;
+
+     public function __construct()
+     {
+         $this->middleware('guest');
+     }
 
     public function index()
     {
@@ -28,14 +40,26 @@ class UserController extends Controller
        
         
     }
+
+    public function validator(array $data){
+        return Validator::make($data, [
+            'email' => ['required', 'string', 'max:255'],
+            'password' => ['required', 'confirmed'],
+        ]);
+        
+    }
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create(array $data){
+        return User::create([
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'Names' => $data['Names'],
+            
+        ]);
     }
 
     /**
@@ -50,8 +74,8 @@ class UserController extends Controller
         $user->Last_Name = $request->Last_Name;
         $user->MLast_Name = $request->MLast_Name;
         $user->Names = $request->Names;
-        $user->E_Mail = $request->E_Mail;
-        $user->Password = $request->Password;
+        $user->email = $request->email;
+        $user->Password = $request->password;
         $user->Confirmation = $request->Confirmation;
         $user->bday = $request->bday;
         $user->bmonth = $request->bmonth;
@@ -67,7 +91,7 @@ class UserController extends Controller
         $user->namelesson = $request->namelesson;
         $user->roleuser = $request->roleuser;
         $user->save();
-        return redirect()->route('feed.index');
+        return redirect()->route('feed');
     }
 
     /**

@@ -12,7 +12,7 @@
 
             <div class="teacher rounded-left">
                 <p class="h4 text-center" >{{ __('¿Quieres ayudar a resolver problemas de soporte técnico?') }}</p><br>
-                    <form action="{{ route ('user.index') }}" method = "GET">
+                    <form action="{{ route ('UpUser') }}" method = "GET">
                         @csrf
                         <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" name = "docente" value = "Empieza como docente">
                     </form>
@@ -21,7 +21,7 @@
         <div class="student rounded-right" >
              <p class="h4 text-center">{{ __('¿Quieres consultar y aprender a la marcha de trabajar?') }}</p><br>
 
-                <form action=" {{ route ('user.index') }} " method = "GET">
+                <form action=" {{ route ('UpUser') }} " method = "GET">
                     @csrf
                     <input type = "submit" class="btn btn-login btn-lg btn-block rounded-pill" name = "alumno" value = "Empieza como alumno">
                 </form>
