@@ -41,7 +41,7 @@
 
                                             <input type="text" name = "email" class="form-control" placeholder = "E-mail" required>
                                             <input type="text" name = "password" class = "form-control" placeholder = "Password" required>
-                                            <input type="text" name = "Confirmation" class="form-control" placeholder = "Confirmation" required>
+                                            <input type="text" name = "password_confirmation" class="form-control" placeholder = "Confirmation" required>
 
                                         </div>
 
