@@ -17,7 +17,7 @@ class CreateUserTable extends Migration
             $table->bigincrements('id_user');
             $table->string('email')->unique();
             $table->string('password');
-            $table->text('Confirmation');
+            $table->string('password_confirmation')->nullable();
             $table->text('Last_Name')->nullable();
             $table->text('MLast_Name')->nullable();
             $table->text('Names')->nullable();
@@ -34,7 +34,7 @@ class CreateUserTable extends Migration
             $table->text('DirectionH')->nullable();
             
             $table->integer('namelesson')->nullable();
-            $table->integer('roleuser');
+            $table->integer('roleuser')->nullable();
 
             $table->timestamps();
         });

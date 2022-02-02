@@ -4,18 +4,6 @@
 <!-- Not Touch Div -->
 
 <div class="container-canvas">
-    <nav class = "navbar navbar-light bg-light border-bottom">
-          <a href="teacherup" class="navbar-brand">
-              <img src="{{ asset('latefon.png') }}" alt="" class="d-inline-block align-top" width = "30" height = "30">
-        S U P P O R T</a>
-         <ul class="nav nav-pills justify-content-end">
-             <li class="nav-item">
-                 <a href="" class= "nav-item btn btn-light" role = "button">Perfil</a>
-                 <a href="" class= "nav-item btn btn-light" role = "button">Cerrar sesión</a>
-             </li>
-         </ul>
-    </nav>
-
         <div class = "containerteacher">
             <div class="ranking-challenge-test shadow p-3 mb-5 bg-white rounded border-right">
                     <div class = "ranking">

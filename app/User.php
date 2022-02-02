@@ -18,7 +18,7 @@ class User extends Authenticatable
     "Names", 
     "email", 
     "password", 
-    "Confirmation", 
+    "password_confirmation", 
     "bday", 
     "bmonth", 
     "byear", 

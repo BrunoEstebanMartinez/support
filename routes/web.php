@@ -26,11 +26,17 @@ use App\Http\Controllers\PhoneController;
 
 
 // Welcome
+    //Login routes
 Route::view('', 'login');
 Route::get('login', 'LoginBaseController@InitialLate')->name('Login');
 Route::post('login', 'LoginBaseController@authusercredentials')->name('authusercredentials');
+Route::post('logout', 'LoginBaseController@logout')->name('logout');
+
+//Bridge
 Route::get('role', 'RoleController@Choose')->name('Choose');
 Route::get('user', 'UserController@index')->name('UpUser');
+
+//RegisterAuth
 Route::post('user', 'UserController@register')->name('register');
 
 

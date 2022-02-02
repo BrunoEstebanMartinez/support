@@ -45,6 +45,7 @@ class UserController extends Controller
         return Validator::make($data, [
             'email' => ['required', 'string', 'max:255'],
             'password' => ['required', 'confirmed'],
+            
         ]);
         
     }
@@ -69,30 +70,7 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        $user = new User();
-        $user->Last_Name = $request->Last_Name;
-        $user->MLast_Name = $request->MLast_Name;
-        $user->Names = $request->Names;
-        $user->email = $request->email;
-        $user->Password = $request->password;
-        $user->Confirmation = $request->Confirmation;
-        $user->bday = $request->bday;
-        $user->bmonth = $request->bmonth;
-        $user->byear = $request->byear;
-        $user->Gender = $request->Gender;
-        $user->GenerPerson = $request->GenerPerson;
-        $user->Phone1 = $request->Phone1;
-        $user->Phone2 = $request->Phone2;
-        $user->Country = $request->Country;
-        $user->State = $request->State;
-        $user->PostCode =$request->PostCode;
-        $user->DirectionH = $request->DirectionH;
-        $user->namelesson = $request->namelesson;
-        $user->roleuser = $request->roleuser;
-        $user->save();
-        return redirect()->route('feed');
-    }
+    {}
 
     /**
      * Display the specified resource.

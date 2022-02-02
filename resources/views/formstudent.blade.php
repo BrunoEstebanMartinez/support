@@ -26,7 +26,7 @@
         </div>
         <div class="col-auto input-group mb-3">
             <input type="password" class="form-control" name = "password" placeholder = "Password">
-            <input type="password" class="form-control" name = "Confirmation" placeholder = "Confirmation">
+            <input type="password" class="form-control" name = "password_confirmation" placeholder = "Confirmation">
         </div>
         <div class="col-auto input-group mb-3">
             <div class="input-group-append">
@@ -40,6 +40,9 @@
         <div class="linesection"></div><br>
             <p class = "lead center-register">¿Ya tienes una cuenta? <a href="login" role = "button" class = "btn btn-link">Ingresa</a></p>
         </div>
+
+        <!--- Only error test validation--->
+
         @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -49,7 +52,7 @@
         </ul>
     </div>
 @endif
-
+        <!-- Only error test validation -->
     </div>
 
     

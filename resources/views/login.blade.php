@@ -27,7 +27,7 @@
           <span class="invalid-feedback" role = "alert">
             <strong> __{{ 'Invalid Credentials' }} </strong>
           </span>
-          @enderror
+          @enderror 
         <button type="submit" class="btn btn-login btn-lg btn-block rounded-pill">Ingresa</button>
         </form><br>
         <div class="linesection"></div><br>
