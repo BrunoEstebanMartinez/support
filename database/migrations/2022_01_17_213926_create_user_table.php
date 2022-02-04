@@ -17,24 +17,23 @@ class CreateUserTable extends Migration
             $table->bigincrements('id_user');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('password_confirmation')->nullable();
-            $table->text('Last_Name')->nullable();
-            $table->text('MLast_Name')->nullable();
-            $table->text('Names')->nullable();
+            $table->string('Last_Name');
+            $table->string('MLast_Name');
+            $table->string('Names');
             $table->integer('bday')->nullable();
-            $table->text('bmonth')->nullable();
+            $table->string('bmonth')->nullable();
             $table->integer('byear')->nullable();
-            $table->text('Gender')->nullable();
-            $table->text('GenerPerson')->nullable();
-            $table->text('Phone1')->nullable();
-            $table->text('Phone2')->nullable();
-            $table->text('Country')->nullable();
-            $table->text('State')->nullable();
+            $table->string('Gender')->nullable();
+            $table->string('GenerPerson')->nullable();
+            $table->string('Phone1')->nullable();
+            $table->string('Phone2')->nullable();
+            $table->string('Country')->nullable();
+            $table->string('State')->nullable();
             $table->integer('PostCode')->nullable();
             $table->text('DirectionH')->nullable();
             
             $table->integer('namelesson')->nullable();
-            $table->integer('roleuser')->nullable();
+            $table->integer('roleuser');
 
             $table->timestamps();
         });

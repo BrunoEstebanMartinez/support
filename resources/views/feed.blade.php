@@ -82,7 +82,7 @@
 
             </div>
             <div class="todo-hilo-questions-offer">
-                
+               
                     <div class="container-create shadow p-3 mb-5 bg-white rounded">
                             <div class="col-auto input-group input-group-lg">
                                 
@@ -94,25 +94,25 @@
                                 </div>
                             </div>
                     </div>
-                    
+                
                     <div class="scroll-temas shadow p-3 mb-5 bg-white rounded">
                         <div class="hello-post">
                             <div class="my-info-user">
-                                <div class="image-user-info rounded-circle border border-dark">
+                                <div class="image-user-info rounded-circle">
                                     <img src=" {{ asset('user.png') }}" alt="user" height = "48" width = "48" >
                                 </div>
-                                    <div class="header-user-image">
-                                        <div class="name-user-info border border-dark"><span>{{ __('Here content') }}</span></div>
-                                        <div class="role-user-info border border-dark"><span>{{ __('Here content') }}</span></div>
-                                        <div class="int-user-info border border-dark"><span>{{ __('Here content') }}</span></div>
-                                        <div class="date-info-user border border-dark"><span>{{ __('Here content') }}</span></div>
-                                </div>
+                                    <div class="header-user-image border-top border-right">
+                                        <div class="name-user-info"><small><span>{{ __('Here content') }}</span></small></div>
+                                        <div class="role-user-info"><small><span>{{ __('Here content') }}</span></small></div>
+                                        <div class="int-user-info"><small><span>{{ __('Here content') }}</span></small></div>
+                                        <div class="date-info-user"><small><span>{{ __('Here content') }}</span></small></div>
+                                     </div>
                                
                             </div>
-                            <div class="posted-user">
-                                <div class="title-posted border border-dark"><span class = "lead">{{ __('Here content') }}</span></div>
-                                <div class="previo-posted border border-dark"><span class = "lead">{{ __('Here content') }}</span></div>
-                                <div class="image-option border border-dark"><span class = "lead">{{ __('Here content') }}</span></div>
+                            <div class="posted-user border-left border-bottom">
+                                <div class="title-posted"><span class = "lead">{{ __('Here content') }}</span></div>
+                                <div class="previo-posted"><span class = "lead">{{ __('Here content') }}</span></div>
+                                <div class="image-option"><span class = "lead">{{ __('Here content') }}</span></div>
                             </div>
                         </div>
                      
