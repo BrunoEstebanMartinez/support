@@ -3,8 +3,6 @@
 
 <!-- Not Touch Div -->
 
-<div class="container-canvas">
-
    <div class="imagelogo inrole">
             <img src="{{ asset('late.png') }}" alt="" class = "rounded-circle support">
     </div>
@@ -53,7 +51,7 @@
     </div>
 @endif
         <!-- Only error test validation -->
-    </div>
+    
 
     
 

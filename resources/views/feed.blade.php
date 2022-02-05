@@ -3,7 +3,7 @@
 
 <!-- Not Touch Div -->
 
-<div class="container-canvas">
+
         <div class = "containerteacher">
             <div class="ranking-challenge-test shadow p-3 mb-5 bg-white rounded border-right">
                     <div class = "ranking">
@@ -158,6 +158,35 @@
                                                            
                         </div>
                     </div>
+                    <div class="redteacher">
+                    <div class="title-red-friends border-top border-dark"><p><strong>{{ __('Compañeros') }}</strong></p></div>
+                    <div class="scroll-redteacher">
+                        <div class="container-mypartner">
+                            
+                                <div class="larger-butt">
+                                     <div class="content-contact-add ">
+                                        <div class = "name-add-user "><p><small><strong>{{  __('Name')  }}</strong></small></p></div>
+                                        <div class="inter-add-user "><p><small><strong>{{ __('Inter') }}</strong></small></p></div>
+                                        <div class="experience-add-user "><p><small><strong>{{ __('Experience') }}</strong></small></p></div>
+                                    </div>
+                                    <div class="reference-add-user ">
+                                        <div class="container-one-add">
+                                            <div class="ranking-add-user "><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                            <div class="exams-past-add " ><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                            <div class="test-past-add "><p><small><strong>{{  __('0')  }}</strong></small></p></div>
+                                        </div>
+                                        <div class="container-two-add">
+                                            <div class="ranking-add-user "><img src="{{ asset('arrow-growth.png') }}" alt="" height = "15" width = "15"></div>
+                                            <div class="exams-past-add " ><img src="{{ asset('nerd.png') }}" alt="" height = "15" width = "15"></div>
+                                            <div class="test-past-add "><img src="{{ asset('check.png') }}" alt="" height = "15" width = "15"></div>
+                                        </div>
+                                    </div>   
+                                </div>
+                                
+                                <a href="" class = "text-primary tit-add-ser"><p><small><strong>Add</strong></small></p></a>
+                                                           
+                        </div>
+                    </div>
                 </div>
                 <div class="groups-red">
                     <div class="title-gr border-top border-dark "><p><strong>{{ __('Grupos') }}</strong></p></div>
@@ -191,7 +220,5 @@
 
 
 
-
-</div>
 
 @endsection

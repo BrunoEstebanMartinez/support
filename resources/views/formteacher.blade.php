@@ -2,9 +2,6 @@
 @section('canvas')
 
 <!-- Not Touch Div -->
-<div class="container-canvas">
-
-
     <div class="containerregister">
         
          <div class="formscrollcontent">
@@ -156,8 +153,4 @@
         </ul>
     </div>
 @endif
-
-
-</div>
-
 @endsection

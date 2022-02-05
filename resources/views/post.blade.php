@@ -2,18 +2,14 @@
 @section('canvas')
 
 <!--Not touch Div --> 
-
-<div class="container-canvas">
-
     <div class="canverfeed border" >
-      <div class="container-posted ">
-            <div class="up-button-posted ">
-                <form action="">
-                    <input type="submit" class = "btn btn-login" value = "Compartir">
-                
-            </div>
+   
+        <div class="container-posted">
+          
             <div class="vista-post-tools  shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="my-title-up-post ">
+                    <form action = "" method = "post">
+                        @csrf
                    <input type="text" name = "title" class="form-control form-control-lg" placeholder = "Titulo...">                    
                 </div>
                 <div class="menu-tools-post border-top border-dark">
@@ -24,7 +20,7 @@
             <div class="write-user-here  shadow-lg p-3 mb-5 bg-white rounded">
                     <textarea class = "form-control" name = "description" id="" rows="10" placeholder = "¿Que estas creando? ..."></textarea>
             </div>
-           
+          
         </div>
 
 
@@ -146,20 +142,19 @@
                                             <div class="form-check">
                                                 <input type="checkbox" class="form-check-input">
                                                 <label for="" class="form-check-label">{{ __('Name') }}</label>
+                                                <input type="submit" class = "btn btn-login movebutton" value = "Compartir">
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                        </form>
+                                        
                             </div>
             </div>
+            
         </div>
     
-
-    </div>  
         
-
-</div>
-
-
+    </div>  
+    
 @endsection
