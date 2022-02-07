@@ -47,9 +47,11 @@ Route::post('user', 'UserController@register')->name('register');
     //Route::resource('Formteacher', 'TeacherController');
     //Route::view('Formstudent', 'formstudent');
 
+//UpFeed
+Route::get('/post', 'PostController@index')->name('FeedInPost');
+Route::post('post', 'PostController@registerInfo')->name('PostInFeed');
 
 Route::get('/feed', 'FeedController@index')->name('feed');
-Route::resource('Post', 'PostController');
 Route::view('student', 'student');
 
 

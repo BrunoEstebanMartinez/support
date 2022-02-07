@@ -8,7 +8,7 @@
           
             <div class="vista-post-tools  shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="my-title-up-post ">
-                    <form action = "" method = "post">
+                    <form action = "{{ route ('PostInFeed') }}" method = "post">
                         @csrf
                    <input type="text" name = "title" class="form-control form-control-lg" placeholder = "Titulo...">                    
                 </div>
@@ -64,13 +64,17 @@
                                             </div>
                                         </div>
                                         <div class="t3 ">
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input">
-                                                <label for="" class="form-check-label">{{ __('Name') }}</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                </div>
+                                                    <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="check-tag2 ">
+                                    <div class="check-tag2">
                                         <div class="t1 ">
                                             <div class="form-check">
                                                 <input type="checkbox" class="form-check-input">
@@ -84,9 +88,13 @@
                                             </div>
                                         </div>
                                         <div class="t3 ">
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input">
-                                                <label for="" class="form-check-label">{{ __('Name') }}</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                </div>
+                                                    <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>

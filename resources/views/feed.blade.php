@@ -86,7 +86,7 @@
                     <div class="container-create shadow p-3 mb-5 bg-white rounded">
                             <div class="col-auto input-group input-group-lg">
                                 
-                                <a href="{{ route('Post.index') }}" role = "button" class = "btn btn-outline-light"><span class="lead">
+                                <a href="{{ route('FeedInPost') }}" role = "button" class = "btn btn-outline-light"><span class="lead">
                                 {{  __('Comparte tu conocimiento...')  }}
                                 </span></a>
                                 <div class="input-group-prepend">

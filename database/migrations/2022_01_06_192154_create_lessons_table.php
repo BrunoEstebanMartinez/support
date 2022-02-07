@@ -14,7 +14,7 @@ class CreateLessonsTable extends Migration
     public function up()
     {
         Schema::create('lessons', function (Blueprint $table) {
-            $table->increments('id_lesson');
+            $table->increments('lesson-id');
             $table->string('lesson')->unique();
             
         });
