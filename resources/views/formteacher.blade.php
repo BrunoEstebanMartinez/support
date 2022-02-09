@@ -105,23 +105,23 @@
                                   
 
                                     <div class="col-auto form-check mb-3">
-                                       <input type = "radio" class="form-check-input" name="namelesson" value = "1">
+                                       <input type = "radio" class="form-check-input" name="namelesson" value = "MEC11">
                                        <label class="form-check-label">Mantenimiento a equipos de cómputo</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="radio" class="form-check-input" name="namelesson" value = "2">
+                                        <input type="radio" class="form-check-input" name="namelesson" value = "RST11">
                                         <label class="form-check-label">Reparación de SmartPhones, Tabletas...</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="radio" class="form-check-input" name="namelesson" value = "3">
+                                        <input type="radio" class="form-check-input" name="namelesson" value = "RCEM11">
                                         <label class="form-check-label">Reparación de componentes eléctronicos, microcomponentes...</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="radio" class="form-check-input" name="namelesson" value = "4">
+                                        <input type="radio" class="form-check-input" name="namelesson" value = "RE11">
                                         <label class="form-check-label">Reperación de electrodomésticos</label>
                                     </div>
                                     <div class="col-auto form-check mb-3">
-                                        <input type="hidden" class="form-control"  name = "roleuser" value = "1">
+                                        <input type="hidden" class="form-control"  name = "roleuser" value = "PA">
                                     </div>
                             </div>
                                 

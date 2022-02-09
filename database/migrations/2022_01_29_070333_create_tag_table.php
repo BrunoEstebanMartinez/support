@@ -14,9 +14,15 @@ class CreateTagTable extends Migration
     public function up()
     {
         Schema::create('tag', function (Blueprint $table) {
-            $table->bigIncrements('tag_id');
-            $table->string('name_tag')->unique();
+            $table->BigIncrements('id_tag');
+            $table->string('tag_name')->unique();
             
+        });
+
+        Schema::table('tag', function(Blueprint $table){
+            $table->string('user_gmail');
+            $table->foreign('user_gmail')->references('gmail')->on('user');
+
         });
     }
 

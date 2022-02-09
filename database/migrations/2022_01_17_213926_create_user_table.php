@@ -13,8 +13,9 @@ class CreateUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
-            $table->bigincrements('user_id');
+        
+        Schema::create('user', function (Blueprint $table){
+            $table->BigIncrements('id_user');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('Last_Name');
@@ -31,12 +32,21 @@ class CreateUserTable extends Migration
             $table->string('State')->nullable();
             $table->integer('PostCode')->nullable();
             $table->text('DirectionH')->nullable();
-            
-            $table->integer('namelesson')->nullable();
-            $table->integer('roleuser');
-
-            $table->timestamps();
+            $table->timestamps();   
         });
+
+        Schema::table('user', function(Blueprint $table){
+            $table->string('lessoncode_id');
+            $table->foreign('lessoncode_id')->references('lesson_code')->on('lesson');
+        
+            
+            $table->string('rolecode_id');
+            $table->foreign('rolecode_id')->references('role_code')->on('role');
+        });
+                   
+           
+        
+      
     }
 
     /**

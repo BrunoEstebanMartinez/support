@@ -8,4 +8,5 @@ class Tag extends Model
 {
     protected $table = "tag";
     protected $fillable = ["name_tag"];
+    protected $primaryKey = "id_tag";
 }

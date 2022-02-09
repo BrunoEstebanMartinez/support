@@ -32,7 +32,7 @@
             </div>
                 <input type="text" name = "Country" class = "form-control">
         </div>
-        <input type="hidden" name = "roleuser" value = "2">
+        <input type="hidden" name = "roleuser" value = "AA">
             <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value  = "Continuar" > 
     </form><br>
         <div class="linesection"></div><br>

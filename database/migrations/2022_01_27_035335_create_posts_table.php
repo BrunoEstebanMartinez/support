@@ -13,15 +13,17 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->bigIncrements('post_id');
+        Schema::create('post', function (Blueprint $table) {
+            $table->BigIncrements('id_post');
             $table->text('title');
             $table->text('description');
-           
             $table->timestamps();
 
-            
-           
+        });
+
+        Schema::table('post', function(Blueprint $table){
+            $table->string('user_gmail');
+            $table->foreign('user_gmail')->references('gmail')->on('user');
         });
     }
 

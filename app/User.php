@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Role as Roles;
+use App\Lesson as Lessons;
 
 class User extends Authenticatable
 {
@@ -33,4 +35,8 @@ class User extends Authenticatable
     "namelesson",
     "roleuser"];
     protected $primaryKey = "id_user";
+
+    public function rolesMyUser(){return $this->belongsTo('Roles');}
+    public function lesssonsMyUser(){return $this->belongsTo('Lessons');}
+
 }
