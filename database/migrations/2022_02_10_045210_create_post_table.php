@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostsTable extends Migration
+class CreatePostTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,15 +15,19 @@ class CreatePostsTable extends Migration
     {
         Schema::create('post', function (Blueprint $table) {
             $table->BigIncrements('id_post');
-            $table->text('title');
+            $table->string('title');
             $table->text('description');
             $table->timestamps();
 
         });
 
         Schema::table('post', function(Blueprint $table){
-            $table->string('user_gmail');
-            $table->foreign('user_gmail')->references('gmail')->on('user');
+            $table->string('user_email_id');
+            $table->foreign('user_email_id')
+            ->references('email')
+            ->on('user')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
         });
     }
 
@@ -34,6 +38,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('post');
     }
 }
