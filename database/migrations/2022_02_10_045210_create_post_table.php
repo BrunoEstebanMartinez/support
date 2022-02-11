@@ -15,7 +15,7 @@ class CreatePostTable extends Migration
     {
         Schema::create('post', function (Blueprint $table) {
             $table->BigIncrements('id_post');
-            $table->string('title');
+            $table->string('title')->index();
             $table->text('description');
             $table->timestamps();
 
@@ -28,7 +28,15 @@ class CreatePostTable extends Migration
             ->on('user')
             ->onDelete('cascade')
             ->onUpdate('cascade');
+
+            $table->string('comment_user_id');
+            $table->foreign('comment_user_id')
+            ->references('context_my_')
+            ->on('comments')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
         });
+
     }
 
     /**

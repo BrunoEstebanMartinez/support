@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTagTable extends Migration
+class CreateRoleUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,16 @@ class CreateTagTable extends Migration
      */
     public function up()
     {
-        Schema::create('tag', function (Blueprint $table) {
-            $table->BigIncrements('id_tag');
-            $table->string('tag_name')->index();
-            
+        Schema::create('role_user', function (Blueprint $table) {
+            $table->BigIncrements('id_role_user');
+            $table->timestamps();
         });
-
-        Schema::table('tag', function(Blueprint $table){
+        Schema::table('role_user', function (Blueprint $table){
             $table->string('user_email_id');
             $table->foreign('user_email_id')->references('email')->on('user');
 
-            
+            $table->string('rolecode_id');
+            $table->string('rolecode_id')->references('role_code')->on('role');
         });
     }
 
@@ -34,7 +33,6 @@ class CreateTagTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tag');
+        Schema::dropIfExists('role_user');
     }
 }
-
