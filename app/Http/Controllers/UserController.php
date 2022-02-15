@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Role;
-use Illuminate\Http\Request;
+use Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator; 
-use App\Providers\RouteServiceProvider;
+use App\Providers\RouteServiceProvider; 
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller
@@ -51,7 +51,7 @@ class UserController extends Controller
             'password_confirmation' => ['required'],
             'Gender' => ['string', 'max:255'],
             'Phone1' => ['string', 'min:9'],
-            'roleuser' => ['required'],
+            'rolecode_id' => ['required'],
              
         ]);
         
@@ -61,6 +61,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+/* With*/
     public function create(array $data){
         $UserUp = User::create([
             'email' => $data['email'],
@@ -68,21 +69,21 @@ class UserController extends Controller
             'Last_Name' => $data['Last_Name'],
             'MLast_Name' => $data['MLast_Name'],
             'Names' => $data['Names'],
-            'Country' => $data['Country'],
-            'bday' => $data['bday'] = 1,
-            'bmonth' => $data['bmonth'] = 'name',
-            'byear' => 1,
-            'byear' => $data['byear'] = 1,
-            'Gender' => $data['Gender'] = 'name',
-            'GenerPerson' => $data['GenerPerson'] = 'name',
-            'Phone1' => $data['Phone1'] = 1,
-            'Phone2' => $data['Phone2'] = 1,
-            'State' => $data['State'] = 'name',
-            'PostCode' => $data['PostCode'] = 1,
-            'DirectionH' => $data['DirectionH'] = 'name',
-            'namelesson' => $data['namelesson'] = 0,
-            'roleuser' => $data['roleuser'],
+            'Country' => Request::input('Country', 'name'),
+            'bday' => Request::input('bday', 1),
+            'bmonth' => Request::input('bmonth', 'name'),
+            'byear' => Request::input('byear', 1),
+            'Gender' => Request::input('Gender', 'name'),
+            'GenerPerson' => Request::input('GenerPerson', 'name'),
+            'Phone1' => Request::input('Phone1', 1),
+            'Phone2' => Request::input('Phone2', 1),
+            'State' => Request::input('State', 'name'),
+            'PostCode' => Request::input('PostCode', 1),
+            'DirectionH' => Request::input('DirectionH', 'name'),
+            'lessoncode_id' => Request::input('lessoncode_id', 'name'),
+            'rolecode_id' => $data['rolecode_id'],
         ]);
+            
         return $UserUp;
     }
    

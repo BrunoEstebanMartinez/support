@@ -8,8 +8,8 @@ use App\Comment as Comments;
 
 class Post extends Model
 {
-        protected $table = "posts";
-        protected $fillable = ["title", "description"];
+        protected $table = "post";
+        protected $fillable = ["title", "description", "user_email_id", "comment_user_id"];
         protected $primaryKey = "id_post"; 
 
         public function postMyUser(){return $this->belongsTo('Users');}

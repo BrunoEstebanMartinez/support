@@ -32,7 +32,17 @@
             </div>
                 <input type="text" name = "Country" class = "form-control">
         </div>
-        <input type="hidden" name = "roleuser" value = "AA">
+        <div class="col-auto input-group mb-3">
+            <select name="lessoncode_id" id="" class="form-control">
+                <option disabled>¿Cual es tu interes?</option>
+                <option value="MEC11">Mantenimiento a equipos de cómputo</option>
+                <option value="RST11">Reparación de SmartPhones, Tabletas...</option>
+                <option value="RCEM11">Reparación de componentes eléctronicos, microcomponentes...</option>
+                <option value="RE11">Reperación de electrodomésticos</option>
+            </select>
+
+        </div>
+        <input type="hidden" name = "rolecode_id" value = "AA">
             <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" value  = "Continuar" > 
     </form><br>
         <div class="linesection"></div><br>

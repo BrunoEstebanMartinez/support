@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Role as Roles;
 use App\Lesson as Lessons;
-use App\Tag as PivotUserTag;
+use App\TagUser as PivotUserTag;
 
 class User extends Authenticatable
 {
@@ -33,12 +33,12 @@ class User extends Authenticatable
     "State", 
     "PostCode", 
     "DirectionH", 
-    "namelesson",
-    "roleuser"];
+    "lessoncode_id",
+    "rolecode_id"];
     protected $primaryKey = "id_user";
 
     public function rolesMyUser(){return $this->belongsTo('Roles');}
     public function lesssonsMyUser(){return $this->belongsTo('Lessons');}
-    public function tagsMakeUser(){return $this->belongsTo('PivotUserTag');}
+    public function tagsMakeUser(){return $this->belongsToMany('PivotUserTag');}
 
 }

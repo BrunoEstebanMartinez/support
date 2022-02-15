@@ -19,6 +19,7 @@ trait RegisterSystem{
     public function registerInfo(Request $request){
         $this->validator($request->all())->validate();
         event(new UpInFeed($Model = $this->create($request->all())));
+        
         return $this->registerUp($request, $Model)?: redirect($this->redirectPathLate());
 
     }

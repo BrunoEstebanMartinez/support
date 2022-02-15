@@ -12,19 +12,19 @@ class Lessons extends Seeder
      */
     public function run(){
       
-       DB::table('lessons')->insert([
+       DB::table('lesson')->insert([
             'lesson_code' => 'MEC11',
             'lesson_name' => 'Mantenimiento a equipos de cómputo',
        ]);   
-       DB::table('lessons')->insert([
+       DB::table('lesson')->insert([
             'lesson_code' => 'RST11',
             'lesson_name' => 'Reparación de smartphones, tabletas',
        ]);
-       DB::table('lessons')->insert([
+       DB::table('lesson')->insert([
             'lesson_code' => 'RCEM11',
             'lesson_name' => 'Reperación de componentes electrónicos, microcomponentes',
        ]);
-       DB::table('lessons')->insert([
+       DB::table('lesson')->insert([
             'lesson_code' => 'RE11',
             'lesson_name' => 'Reparación de electrodomésticos',
        ]);
