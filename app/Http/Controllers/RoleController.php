@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Role;
+use App\User;
 use Illuminate\Http\Request;
 
 class RoleController extends Controller
 {
-    public function Choose(){
-        return view('role');
+
+    public function index(){
+        $user = User::All();
+        $role = Role::All();
+        return view('role', compact('user', 'role'));
     }
 }

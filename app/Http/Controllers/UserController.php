@@ -28,18 +28,11 @@ class UserController extends Controller
          $this->middleware('guest');
      }
 
-    public function index()
-    {
-
+    public function forms()
+    {//return route('Upuser', [$role_name => Request::input('myroles')])?: view('$role_name');
         $user = User::All();
-        if(isset($_GET['docente'])){
-            return view('formteacher', compact('user'));
-        }elseif(isset($_GET['alumno'])){
-            return view('formstudent', compact('user'));
-        }
-       
-        
-    }
+        $role_name = view(Request::input('myroles'), compact('user'));
+    return $role_name;}
 
     public function validator(array $data){
         return Validator::make($data, [
@@ -82,29 +75,8 @@ class UserController extends Controller
             'DirectionH' => Request::input('DirectionH', 'name'),
             'lessoncode_id' => Request::input('lessoncode_id', 'name'),
             'rolecode_id' => $data['rolecode_id'],
-        ]);
-            
+        ]);  
         return $UserUp;
     }
    
-    public function show(User $user)
-    {
-        //
-    }
-
-  
-    public function edit(User $user)
-    {
-        //
-    }
-
-    public function update(Request $request, User $user)
-    {
-        //
-    }
-
-    public function destroy(User $user)
-    {
-        //
-    }
 }

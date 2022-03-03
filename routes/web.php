@@ -33,8 +33,9 @@ Route::post('login', 'LoginBaseController@authusercredentials')->name('authuserc
 Route::post('logout', 'LoginBaseController@logout')->name('logout');
 
 //Bridge
-Route::get('role', 'RoleController@Choose')->name('Choose');
-Route::get('user', 'UserController@index')->name('UpUser');
+Route::get('role', 'RoleController@index')->name('Choose');
+//Route::get('user/{role_name}', 'UserController@index')->name('UpUser');
+Route::get('user', 'UserController@forms')->name('UpUser');
 
 //RegisterAuth
 Route::post('user', 'UserController@register')->name('register');

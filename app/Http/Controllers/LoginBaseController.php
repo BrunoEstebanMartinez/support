@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -18,7 +18,8 @@ class LoginBaseController extends Controller
     }
 
     public function InitialLate(){
-        return view('login');
+        $role = Role::All();
+        return view('login', compact('role'));
     }
 
     public function authusercredentials(Request $request){

@@ -14,6 +14,7 @@
                 <p class="h4 text-center" >{{ __('¿Quieres ayudar a resolver problemas de soporte técnico?') }}</p><br>
                     <form action="{{ route ('UpUser') }}" method = "GET">
                         @csrf
+                        <input type="hidden" name = "myroles" value = "formteacher">
                         <input type="submit" class="btn btn-login btn-lg btn-block rounded-pill" name = "docente" value = "Empieza como docente">
                     </form>
             </div>
@@ -23,6 +24,7 @@
 
                 <form action=" {{ route ('UpUser') }} " method = "GET">
                     @csrf
+                    <input type="hidden" name = "myroles" value = "formstudent">
                     <input type = "submit" class="btn btn-login btn-lg btn-block rounded-pill" name = "alumno" value = "Empieza como alumno">
                 </form>
         </div>

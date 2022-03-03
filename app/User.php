@@ -36,7 +36,7 @@ class User extends Authenticatable
     "lessoncode_id",
     "rolecode_id"];
     protected $primaryKey = "id_user";
-
+    
     public function rolesMyUser(){return $this->belongsTo('Roles');}
     public function lesssonsMyUser(){return $this->belongsTo('Lessons');}
     public function tagsMakeUser(){return $this->belongsToMany('PivotUserTag');}
