@@ -10,7 +10,7 @@ class UpInUser{
     public $User; 
 
     public function __contruct($User){
-        $this -> User = $User;
+        $this ->User = $User;
     }
 }
 ?>
