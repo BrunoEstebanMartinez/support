@@ -30,17 +30,18 @@ class UserController extends Controller
          $this->middleware('guest');
      }
 
-     /*
+     
     public function forms()
     {//return route('Upuser', [$role_name => Request::input('myroles')])?: view('$role_name');
         $user = User::All();
         $role_name = view(Request::input('myroles'), compact('user'));
     return $role_name;}
-*/
+
+        /*
         public function forms($role_name){
-            
-            return view($role_name, compact('user'));
+            return view($role_name, compact('user', 'roles'));
         }
+        */
     public function validator(array $data){
         return Validator::make($data, [
             'Names' => ['required', 'string', 'max:255'],
