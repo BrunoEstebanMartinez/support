@@ -35,7 +35,7 @@ Route::post('logout', 'LoginBaseController@logout')->name('logout');
 Route::get('role', 'RoleController@index')->name('Choose');
 //Route::get('user/{role_name}', 'UserController@forms')->name('UpUser');
 //Route::get('user', 'UserController@showMeView')->name('UpUser');
-Route::get('user', 'UserController@forms')->name('UpUser');
+Route::get('user', 'UserController@showMeView')->name('UpUser');
 
 //RegisterAuth
 Route::post('user', 'UserController@register')->name('register');

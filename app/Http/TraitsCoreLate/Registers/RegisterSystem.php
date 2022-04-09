@@ -18,7 +18,6 @@ trait RegisterSystem{
 
     use redirectifFailed;
 
-    //Registers
     public function registerInfo(Request $request){
         $this->validator($request->all())->validate();
         event(new UpInFeed($Model = $this->create($request->all())));
@@ -26,15 +25,19 @@ trait RegisterSystem{
         return $this->registerUp($request, $Model)?: redirect($this->redirectPathLate());
 
     }
-    /*
+
+    
     public function showMeView(Request $request){
         event(new UpInUser($Model = $this -> all()));
-       
-        return $request->input('myroles');
+        $request->input('chooseViews');
+        return $this->chooseViews($request, $Model);
     }
-    */
+
     //Aux
     protected function registerUp(Request $request, $Model){
+    }
+    protected function chooseViews(Request $request, $Model){
+
     }
 }
 ?>
